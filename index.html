@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>urbanis.me</title>
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="css/starter-template.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white" style="height: 70px;">
+            <a class="navbar-brand text-dark" href="#top" style="font-size: 30px;"><b>urbanis</b>.me</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler12" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation"> 
+                <span class="navbar-toggler-icon"></span> 
+            </button>
+            <div class="collapse navbar-collapse" id="navbarToggler12">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link text-dark" style="font-size: 20px;" href="#top">PLU<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item"> 
+                        <a class="nav-link text-dark" style="font-size: 20px;" href="#qui">Qui sommes nous ?</a> 
+                    </li>
+                    <li class="nav-item"> 
+                        <a class="nav-link text-dark" style="font-size: 20px;" href="#concept">Concept</a> 
+                    </li>
+                    <li class="nav-item"> 
+                        <a class="nav-link text-dark" href="#contact" style="font-size: 20px;">Contact</a> 
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0"></form>
+            </div>
+        </nav>
+        <div class="pb-5 pb-md-5 pt-md-5 container-fluid pt-5 " style="height: 550px;
+    background-image: url('images/Capture%20d%E2%80%99e%CC%81cran%202018-03-14%20a%CC%80%2016.08.02.png');" id="top">
+            <div class="starter-template h-100 w-100">
+                <h1 class="display-4 mb-md-5 mt-md-5 text-light">Accédez à votre PLU en 1 clic !</h1>
+                <div class="form-group d-inline-flex"> 
+                    <input type="text" id="input-communes" list="liste-communes-test" placeholder="Entrer votre commune" onchange="validation_commune(this);" onclick="miseazero(this);" style="width: 300px;">
+                    <datalist id="liste-communes-test"></datalist>
+                    <input type="text" id="input-sections" list="liste-sections-test" placeholder="Entrer votre section" onclick="miseazero(this);">
+                    <datalist id="liste-sections-test"></datalist>
+                    <button class="btn btn-success" type="button" id="commune" style="width: 70px;
+    background-color: #73708f;">OK</button>                     
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-light" id="qui">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="pt-5 pb-5 text-md-center"><span style="color:#365063"><b>urbanis</b>.me</span> vous accompagne dans l'accès et la compréhension de votre PLU</h3> 
+                </div>
+            </div>
+            <div class="row pl-md-2 pr-md-2 pb-md-5">
+                <div class="col-md-4 text-center text-md-center">
+                    <img class="p-md-3 rounded-circle border-light w-50" src="images/noun_1283933_cc.png" style="border-bottom: 1px solid;
+    border-top: 1px solid #000000;
+    box-shadow: 0px 3px 10px #767676;">
+                    <h3 class="pt-md-5 pb-md-5">Achat/ Vente d'un terrain</h3> 
+                    <p class="pl-md-4 pr-md-4">Accédez à un résumé de ce qu'il vous est possible de faire sur votre terrain.</p> 
+                </div>
+                <div class="col-md-4 text-center text-md-center">
+                    <img src="images/noun_29741_cc.png" class="img-fluid w-50 rounded-circle border-light p-md-3" style="box-shadow: 0px 3px 10px #767676;">
+                    <h3 class="pt-md-5 pb-md-5">Projet de construction</h3> 
+                    <p class="pl-md-4 pr-md-4">Vérifiez la conformité de votre projet, et les caractéristiques à modifier si nécessaire.</p> 
+                </div>
+                <div class="col-md-4 text-md-center text-center">
+                    <img src="images/noun_623479_cc.png" class="w-50 p-md-3 rounded-circle border-light" style="box-shadow: 0px 3px 10px #767676;">
+                    <h3 class="pt-md-5 pb-md-5">Autre</h3> 
+                    <p class="pl-md-4 pr-md-4">Accédez facilement à une version simplifié de votre PLU.</p> 
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid text-light" style="background-color: #73708f;" id="concept">
+            <div class="row p-md-5">
+                <div class="col-md-4"> 
+                    <a href="#"> 
+                        <img class="w-100 img-thumbnail" alt="" src="images/multibanque-icon-1.png"> 
+                    </a>                     
+                </div>
+                <div class="col-md-8">
+                    <p>Fini la complexité des PLU ! Avec Urbanis.me, vous n'aurez plus à vous plonger dans les textes techniques et complexes du code de l'urbanisme.</p>
+                    <p>Nous avons développé un nouveau langage informatique qui nous permet de traduire facilement tout PLU en code compréhensible par un ordinateur, ainsi que le code de l'urbanisme et autre lois littorales, montagnes, SCOT, etc.</p>
+                </div>
+            </div>
+            <div class="row p-md-5">
+                <div class="col-md-8">
+                    <p><span style="font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 1rem;">Cette technologie va vous permettre de savoir instantanément :</span></p>
+                    <ul> 
+                        <li>Ce qui est faisable sur votre terrain</li>                         
+                        <li>Si votre projet de construction/ rénovation/ extension est conforme au PLU de votre commune
+                            <br>
+                        </li>                         
+                        <li>Dans le cas ou celui-ci n'est pas conforme, quelles caractéristiques changer pour qu'il le devienne
+                            <br>
+                        </li>                         
+                    </ul>
+                </div>
+                <div class="col-md-4"> 
+                    <a href="#"> 
+                        <img class="w-100 img-thumbnail" alt="" src="images/iStock_000016521178_Large.jpg"> 
+                    </a>                     
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid pl-md-5 p-md-5" id="contact">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="jumbotron"> 
+                        <h1 class="display-3">Vous êtes intéressé ?</h1> 
+                        <p class="lead">Laissez-nous vos coordonnées, nous vous recontacterons une fois la plateforme fonctionelle !</p> 
+                        <hr class="my-4"> 
+                        <p>Promis pas de spam !</p>
+                        <div class="input-group"> 
+                            <div class="input-group-prepend"> 
+                                <div class="input-group-text">@</div>                                 
+                            </div>    
+                            <input type="text" class="form-control" placeholder="Email" name="email"> 
+                            <button type="submit" class="btn btn-light">Envoyer</button>
+                        </div>                         
+                    </div>                     
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid text-light small bg-dark" style="background-color: #73708f;">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h3><b>urbanis</b>.me</h3> 
+                    <p>11 place vauban<br> 
+                75010 PARIS</p>
+                    <p>06 52 17 44 72<br>
+            clement@urbanis.me</p>
+                </div>
+            </div>
+        </div>
+        <!-- /.container -->
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="js/jquery.js"></script>
+        <script src="js/popper.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/main.js"></script>
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+    </body>
+</html>
